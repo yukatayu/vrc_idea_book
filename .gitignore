@@ -1,0 +1,9 @@
+.DS_Store
+*~
+*.bak
+*.yml.orig
+#*.erb.orig
+rubygems/*
+tmp/*
+vrc_idea_book-pdf/*
+vrc_idea_book-md/*

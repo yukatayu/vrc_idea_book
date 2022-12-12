@@ -1,0 +1,22 @@
+name: CI
+
+# on: [pull_request]
+
+push:
+  branches:
+    - main
+
+jobs:
+  build:
+    name: build review pdf
+    runs-on: ubuntu-latest
+    container: docker://kauplan/review2.5
+
+    steps:
+    - uses: actions/checkout@main
+    - name: build pdf
+      run: rake pdf
+    - uses: actions/upload-artifact@main
+      with:
+        name: build-pdf
+        path: ./vrc_idea_book.pdf
