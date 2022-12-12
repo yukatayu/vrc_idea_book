@@ -8,3 +8,11 @@ tmp/*
 vrc_idea_book-pdf/*
 vrc_idea_book-md/*
 vrc_idea_book.pdf
+
+# lint
+node_modules/
+package.json
+package-lock.json
+
+# server
+webroot/
