@@ -60,8 +60,8 @@
 
 %%% カラー（RGB、PCやタブレット向け）
 \ifstreq{\starter@colormode}{rgb}
-  \definecolor{starter@deepcolor}{HTML}{990000}     % red
- %\definecolor{starter@deepcolor}{HTML}{006699}     % blue
+  %\definecolor{starter@deepcolor}{HTML}{990000}     % red
+  \definecolor{starter@deepcolor}{HTML}{006699}     % blue
   \definecolor{starter@palecolor}{HTML}{E5E5E5}     % light gray
      \colorlet{starter@chaptercolor}{starter@deepcolor}
      \colorlet{starter@sectioncolor}{starter@deepcolor}
@@ -98,7 +98,8 @@
 
 %%% カラー（CYMK、カラー印刷向け）
 \ifstreq{\starter@colormode}{cmyk}
-  \definecolor{starter@deepcolor}{cmyk}{0.0,1.0,1.0,0.4}     % red
+  %\definecolor{starter@deepcolor}{cmyk}{0.0,1.0,1.0,0.4}     % red
+  \definecolor{starter@deepcolor}{cmyk}{0.39,0.13,0,0.15}     % blue
   \definecolor{starter@palecolor}{cmyk}{0.0,0.0,0.0,0.1}     % light gray
      \colorlet{starter@chaptercolor}{starter@deepcolor}
      \colorlet{starter@sectioncolor}{starter@deepcolor}
